@@ -13,7 +13,8 @@
     'installable': True,
     'depends': [
         'base',
-        'product'
+        'product',
+        'purchase'
     ],
     'data': [
         'views/product_view.xml'

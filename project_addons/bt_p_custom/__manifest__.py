@@ -14,9 +14,12 @@
     'depends': [
         'base',
         'product',
-        'purchase'
+        'purchase',
+        'sale_order_lot_selection'
     ],
     'data': [
-        'views/product_view.xml'
+        'views/product_view.xml',
+        'views/sale.xml',
+        'views/report_saleorder.xml',
     ],
 }

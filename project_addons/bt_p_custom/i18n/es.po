@@ -1,0 +1,36 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* bt_p_custom
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-11 17:09+0000\n"
+"PO-Revision-Date: 2019-02-11 17:09+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.custom_report_saleorder
+msgid "Life date"
+msgstr "Fecha de caducidad"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.custom_report_saleorder
+msgid "Lot"
+msgstr "Lote"
+
+#. module: bt_p_custom
+#: model:ir.model,name:bt_p_custom.model_stock_production_lot
+msgid "Lot/Serial"
+msgstr "Lote/Número de serie"
+
+#. module: bt_p_custom
+#: model:ir.model.fields,field_description:bt_p_custom.field_stock_production_lot_use_date_date
+msgid "Use Date Date"
+msgstr "Use Date Date"

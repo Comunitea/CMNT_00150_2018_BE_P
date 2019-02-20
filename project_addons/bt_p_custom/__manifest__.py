@@ -20,6 +20,7 @@
     'data': [
         'views/product_view.xml',
         'views/sale.xml',
+        'views/account_invoice.xml',
         'views/report_saleorder.xml',
     ],
 }

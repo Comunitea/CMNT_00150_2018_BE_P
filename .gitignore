@@ -72,3 +72,4 @@ target/
 
 .mr.developer.cfg
 eggs-custom
+.vscode/

@@ -22,5 +22,6 @@
         'views/sale.xml',
         'views/account_invoice.xml',
         'views/report_saleorder.xml',
+        'views/res_partner.xml',
     ],
 }

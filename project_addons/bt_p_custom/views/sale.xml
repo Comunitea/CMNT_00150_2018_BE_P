@@ -38,6 +38,18 @@
             </field>
         </field>
     </record>
+
+    <record id="view_quotation_tree_inherit" model="ir.ui.view">
+        <field name="name">view.quotation.tree.inherit</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_quotation_tree"/>
+        <field name="arch" type="xml">
+            <field name="partner_id" position="after">
+                <field name="client_order_ref"/>
+            </field>
+        </field>
+    </record>
+    
     <record id="sale.action_quotations" model="ir.actions.act_window">
             <field name="name">Quotations</field>
             <field name="type">ir.actions.act_window</field>

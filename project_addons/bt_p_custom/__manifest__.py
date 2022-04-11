@@ -15,7 +15,8 @@
         'base',
         'product',
         'purchase',
-        'sale_order_lot_selection'
+        'sale_order_lot_selection',
+        'sale_stock_picking_note'
     ],
     'data': [
         'views/product_view.xml',
@@ -23,5 +24,6 @@
         'views/account_invoice.xml',
         'views/report_saleorder.xml',
         'views/res_partner.xml',
+        'views/stock.xml',
     ],
 }

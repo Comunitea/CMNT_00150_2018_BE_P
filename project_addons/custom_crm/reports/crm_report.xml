@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <report
+            id="action_report_opportunity"
+            string="Opportunity"
+            model="crm.lead"
+            report_type="qweb-pdf"
+            file="custom_crm.report_crm_lead_opportunity"
+            name="custom_crm.report_crm_lead_opportunity"
+            print_report_name="'Opportunity - %s' % (object.name)"
+        />
+    </data>
+</odoo>

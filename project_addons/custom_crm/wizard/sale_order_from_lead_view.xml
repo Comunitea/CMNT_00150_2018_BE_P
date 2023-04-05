@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="view_sale_order_from_lead" model="ir.ui.view">
+            <field name="name">Sale Order</field>
+            <field name="model">sale.order.from.lead</field>
+            <field name="arch" type="xml">
+                <form string="Sale Order From Lead">
+                    <p class="oe_grey">
+                        Sale orders will be created in draft so that you can review
+                        them before validation.
+                    </p>
+                    <group>
+                        <field name="lead_id" invisible="1"/>
+                       <field name="lead_line_ids" colspan="4"/>
+                    </group>
+                    <footer>
+                        <button name="create_sale_order" string="Create and View Quotation" type="object"
+                            class="btn-primary"/>
+                        <button string="Cancel" class="btn-default" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_sale_order_from_lead_line_tree" model="ir.ui.view">
+            <field name="name">Sale Order</field>
+            <field name="model">sale.order.from.lead.line</field>
+            <field name="arch" type="xml">
+                <tree editable="bottom">
+                    <field name="product_id" />
+                    <field name="name" />
+                    <field name="product_qty"/>
+                    <field name="price_unit"/>
+                    <!-- <field name="discount"/> -->
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_view_sale_order_from_lead" model="ir.actions.act_window">
+            <field name="name">Sale Order</field>
+            <field name="res_model">sale.order.from.lead</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+</odoo>

@@ -1,0 +1,182 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* custom_crm
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-31 11:53+0000\n"
+"PO-Revision-Date: 2023-03-31 11:53+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: custom_crm
+#: model:ir.ui.view,arch_db:custom_crm.report_crm_opportunity
+msgid "<strong>Deadline Date:</strong>"
+msgstr "<strong>Deadline Date:</strong>"
+
+#. module: custom_crm
+#: model:ir.ui.view,arch_db:custom_crm.report_crm_opportunity
+msgid "<strong>Salesperson:</strong>"
+msgstr "<strong>Comercial</strong>"
+
+#. module: custom_crm
+#: model:ir.ui.view,arch_db:custom_crm.view_sale_order_from_lead
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: custom_crm
+#: model:ir.ui.view,arch_db:custom_crm.view_sale_order_from_lead
+msgid "Create and View Quotation"
+msgstr "Create and View Quotation"
+
+#. module: custom_crm
+#: model:ir.model.fields,field_description:custom_crm.field_sale_order_from_lead_create_uid
+#: model:ir.model.fields,field_description:custom_crm.field_sale_order_from_lead_line_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: custom_crm
+#: model:ir.model.fields,field_description:custom_crm.field_sale_order_from_lead_create_date
+#: model:ir.model.fields,field_description:custom_crm.field_sale_order_from_lead_line_create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: custom_crm
+#: model:ir.ui.view,arch_db:custom_crm.report_crm_opportunity
+msgid "Description"
+msgstr "Descripción"
+
+#. module: custom_crm
+#: model:ir.ui.view,arch_db:custom_crm.report_crm_opportunity
+msgid "Disc.(%)"
+msgstr "Desc.(%)"
+
+#. module: custom_crm
+#: model:ir.model.fields,field_description:custom_crm.field_sale_order_from_lead_display_name
+#: model:ir.model.fields,field_description:custom_crm.field_sale_order_from_lead_line_display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: custom_crm
+#: model:ir.model.fields,field_description:custom_crm.field_crm_lead_validity_date
+msgid "Expiration Date"
+msgstr "Fecha de caducidad"
+
+#. module: custom_crm
+#: model:ir.model.fields,field_description:custom_crm.field_sale_order_from_lead_id
+#: model:ir.model.fields,field_description:custom_crm.field_sale_order_from_lead_line_id
+msgid "ID"
+msgstr "ID (identificación)"
+
+#. module: custom_crm
+#: model:ir.model.fields,field_description:custom_crm.field_crm_lead_is_expired
+msgid "Is expired"
+msgstr "Está expirado"
+
+#. module: custom_crm
+#: model:ir.model.fields,field_description:custom_crm.field_sale_order_from_lead___last_update
+#: model:ir.model.fields,field_description:custom_crm.field_sale_order_from_lead_line___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: custom_crm
+#: model:ir.model.fields,field_description:custom_crm.field_sale_order_from_lead_line_write_uid
+#: model:ir.model.fields,field_description:custom_crm.field_sale_order_from_lead_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización de"
+
+#. module: custom_crm
+#: model:ir.model.fields,field_description:custom_crm.field_sale_order_from_lead_line_write_date
+#: model:ir.model.fields,field_description:custom_crm.field_sale_order_from_lead_write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: custom_crm
+#: model:ir.model.fields,field_description:custom_crm.field_sale_order_from_lead_line_lead_id
+msgid "Lead"
+msgstr "Iniciativa"
+
+#. module: custom_crm
+#: model:ir.model.fields,field_description:custom_crm.field_sale_order_from_lead_lead_line_ids
+msgid "Lead Lines"
+msgstr "Lineas"
+
+#. module: custom_crm
+#: model:ir.model,name:custom_crm.model_crm_lead
+msgid "Lead/Opportunity"
+msgstr "Iniciativa/Oportunidad"
+
+#. module: custom_crm
+#: model:ir.model.fields,field_description:custom_crm.field_sale_order_from_lead_lead_id
+msgid "Leads"
+msgstr "Iniciativas"
+
+#. module: custom_crm
+#: model:ir.model.fields,field_description:custom_crm.field_sale_order_from_lead_line_name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: custom_crm
+#: model:ir.ui.view,arch_db:custom_crm.custom_crm_form
+msgid "New Quotation With Products"
+msgstr "Nuevo presuouesto con productos"
+
+#. module: custom_crm
+#: model:ir.actions.report,name:custom_crm.action_report_opportunity
+msgid "Opportunity"
+msgstr "Oportunidad"
+
+#. module: custom_crm
+#: model:ir.model.fields,field_description:custom_crm.field_sale_order_from_lead_line_price_unit
+msgid "Price Unit"
+msgstr "Price Unit"
+
+#. module: custom_crm
+#: model:ir.model.fields,field_description:custom_crm.field_sale_order_from_lead_line_product_id
+msgid "Product"
+msgstr "Producto"
+
+#. module: custom_crm
+#: model:ir.model.fields,field_description:custom_crm.field_sale_order_from_lead_line_product_qty
+#: model:ir.ui.view,arch_db:custom_crm.report_crm_opportunity
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: custom_crm
+#: model:ir.actions.act_window,name:custom_crm.action_view_sale_order_from_lead
+msgid "Sale Order"
+msgstr "Pedido de venta"
+
+#. module: custom_crm
+#: model:ir.ui.view,arch_db:custom_crm.view_sale_order_from_lead
+msgid "Sale Order From Lead"
+msgstr "Sale Order From Lead"
+
+#. module: custom_crm
+#: model:ir.ui.view,arch_db:custom_crm.view_sale_order_from_lead
+msgid "Sale orders will be created in draft so that you can review\n"
+"                        them before validation."
+msgstr "Los pedidos de venta se crearán en estado borrador para que pueda\n"
+"                        revisarlos antes de la validación"
+
+#. module: custom_crm
+#: model:ir.ui.view,arch_db:custom_crm.report_crm_opportunity
+msgid "Unit Price"
+msgstr "Precio unitario"
+
+#. module: custom_crm
+#: model:ir.model,name:custom_crm.model_sale_order_from_lead
+msgid "sale.order.from.lead"
+msgstr "sale.order.from.lead"
+
+#. module: custom_crm
+#: model:ir.model,name:custom_crm.model_sale_order_from_lead_line
+msgid "sale.order.from.lead.line"
+msgstr "sale.order.from.lead.line"
+

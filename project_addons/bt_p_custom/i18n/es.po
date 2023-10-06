@@ -34,3 +34,9 @@ msgstr "Lote/Número de serie"
 #: model:ir.model.fields,field_description:bt_p_custom.field_stock_production_lot_use_date_date
 msgid "Use Date Date"
 msgstr "Use Date Date"
+
+#. module: bt_p_custom
+#: model:ir.model.fields,field_description:bt_p_custom.field_sale_order_ready_to_send
+#: model:ir.ui.view,arch_db:bt_p_custom.sale_order_view_search_inherit_ready
+msgid "Ready to send"
+msgstr "Listo para enviar"

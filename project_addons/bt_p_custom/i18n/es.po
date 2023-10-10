@@ -40,3 +40,9 @@ msgstr "Use Date Date"
 #: model:ir.ui.view,arch_db:bt_p_custom.sale_order_view_search_inherit_ready
 msgid "Ready to send"
 msgstr "Listo para enviar"
+
+#. module: bt_p_custom
+#: model:ir.actions.act_window,name:bt_p_custom.action_outgoing_picking_move
+#: model:ir.ui.menu,name:bt_p_custom.outgoing_picking_move_menu
+msgid "Outgoing Products"
+msgstr "Productos por enviar"

@@ -46,3 +46,115 @@ msgstr "Listo para enviar"
 #: model:ir.ui.menu,name:bt_p_custom.outgoing_picking_move_menu
 msgid "Outgoing Products"
 msgstr "Productos por enviar"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.view_move_search_outgoing
+msgid "Creation"
+msgstr "Creación"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.view_move_search_outgoing
+msgid "Destination"
+msgstr "Destino"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.view_move_search_outgoing
+msgid "Done"
+msgstr "Realizado"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.view_move_search_outgoing
+msgid "Group By"
+msgstr "Agrupar por"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.view_move_search_outgoing
+msgid "Incoming"
+msgstr "Entrada"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.view_move_search_outgoing
+msgid "Location"
+msgstr "Ubicación"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.view_move_search_outgoing
+msgid "Orders processed today or scheduled for today"
+msgstr "Pedidos procesados hoy o programados para hoy"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.view_move_search_outgoing
+msgid "Outgoing"
+msgstr "Saliente"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.view_move_search_outgoing
+msgid "Partner"
+msgstr "Cliente"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.view_move_search_outgoing
+msgid "Picking"
+msgstr "Albarán"
+
+#. module: bt_p_custom
+#: model:ir.model,name:bt_p_custom.model_product_product
+#: model:ir.ui.view,arch_db:bt_p_custom.view_move_search_outgoing
+msgid "Product"
+msgstr "Producto"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.view_move_search_outgoing
+msgid "Ready"
+msgstr "Preparado"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.view_move_search_outgoing
+#: model:ir.ui.view,arch_db:bt_p_custom.view_move_tree_outgoing_picking
+msgid "Reference"
+msgstr "Referencia"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.view_move_search_outgoing
+msgid "Scheduled"
+msgstr "Planificado"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.view_move_search_outgoing
+msgid "Source"
+msgstr "Origen"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.view_move_search_outgoing
+msgid "Status"
+msgstr "Estado"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.view_move_search_outgoing
+msgid "Stock Moves"
+msgstr "Movimientos de Stock"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.view_move_search_outgoing
+msgid "Stock moves that are Available (Ready to process)"
+msgstr "Movimientos de Stock que están disponibles (preparados para ser procesados)"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.view_move_search_outgoing
+msgid "Stock moves that are Confirmed, Available or Waiting"
+msgstr "Movimientos de Stock que están confirmados, disponibles o en espera."
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.view_move_search_outgoing
+msgid "Stock moves that have been processed"
+msgstr "Movimientos de Stock que han sido procesados"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.view_move_search_outgoing
+msgid "To Do"
+msgstr "Por hacer"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.view_move_search_outgoing
+msgid "Today"
+msgstr "Hoy"

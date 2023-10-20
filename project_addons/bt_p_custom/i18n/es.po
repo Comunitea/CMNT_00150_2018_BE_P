@@ -158,3 +158,13 @@ msgstr "Por hacer"
 #: model:ir.ui.view,arch_db:bt_p_custom.view_move_search_outgoing
 msgid "Today"
 msgstr "Hoy"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.view_move_search_outgoing
+msgid "Operation Type"
+msgstr "Tipo de operación"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.view_move_search_outgoing
+msgid "Partially Available"
+msgstr "Parcialmente disponible"

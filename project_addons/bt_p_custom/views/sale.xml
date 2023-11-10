@@ -29,6 +29,10 @@
             <field name="partner_shipping_id" position="after">
                 <field name="ready_to_send"/>
             </field>
+            <xpath expr="//field[@name='order_line']/tree//field[@name='product_uom_qty']" position="before">
+                <field name="qty_available"/>
+                <field name="virtual_available"/>
+            </xpath>
         </field>
     </record>
 

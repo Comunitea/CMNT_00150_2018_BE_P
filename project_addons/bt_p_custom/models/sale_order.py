@@ -7,3 +7,10 @@ class SaleOrder(models.Model):
     _inherit = 'sale.order'
 
     ready_to_send = fields.Boolean('Ready to send', default=False)
+
+
+class SaleOrderLine(models.Model):
+    _inherit = 'sale.order.line'
+    
+    qty_available = fields.Float('Qty available', related='product_id.qty_available')
+    virtual_available = fields.Float('Virtual available', related='product_id.virtual_available')

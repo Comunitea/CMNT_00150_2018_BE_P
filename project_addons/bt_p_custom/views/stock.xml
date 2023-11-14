@@ -11,4 +11,21 @@
             </field>
         </field>
     </record>
+
+    <record id="view_picking_form" model="ir.ui.view">
+        <field name="name">stock.picking.send.by.mail.inherit.form</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock_picking_send_by_mail.view_picking_form"/>
+        <field name="arch" type="xml">
+            <button name="action_picking_send" position="attributes">
+                <attribute name="attrs">{'invisible': []}</attribute>
+            </button>
+        </field>
+    </record>
+
+    <!-- 
+        Añadida en la plantilla stock_picking_send_by_mail.email_template_stock_picking
+        / ${object.group_id.name} en la línea de Número de pedido.
+    -->
+
 </odoo>

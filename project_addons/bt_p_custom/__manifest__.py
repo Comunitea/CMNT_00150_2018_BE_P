@@ -16,7 +16,8 @@
         'product',
         'purchase',
         'sale_order_lot_selection',
-        'sale_stock_picking_note'
+        'sale_stock_picking_note',
+        'stock_picking_send_by_mail',
     ],
     'data': [
         'views/product_view.xml',

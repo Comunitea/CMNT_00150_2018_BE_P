@@ -168,3 +168,8 @@ msgstr "Tipo de operación"
 #: model:ir.ui.view,arch_db:bt_p_custom.view_move_search_outgoing
 msgid "Partially Available"
 msgstr "Parcialmente disponible"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.report_purchaseorder_document
+msgid "<strong>Customer description</strong>"
+msgstr "<strong>Descripción cliente</strong>"

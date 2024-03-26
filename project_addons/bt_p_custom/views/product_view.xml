@@ -30,6 +30,9 @@
                 <field name="incoming_qty"/>
                 <field name="outgoing_qty"/>
             </field>
+            <field name="virtual_available" position="before">
+                <field name="reserved_qty"/>
+            </field>
         </field>
     </record>
 
@@ -41,6 +44,9 @@
             <field name="virtual_available" position="after">
                 <field name="incoming_qty"/>
                 <field name="outgoing_qty"/>
+            </field>
+            <field name="virtual_available" position="before">
+                <field name="reserved_qty"/>
             </field>
         </field>
     </record>

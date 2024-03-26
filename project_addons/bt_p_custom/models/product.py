@@ -2,6 +2,20 @@ from odoo import api, fields, models
 from odoo.osv import expression
 
 class Product(models.Model):
+    _inherit = 'product.template'
+
+    reserved_qty = fields.Float('Reserved qty', compute='_compute_reserved_qty')
+
+    @api.multi
+    def _compute_reserved_qty(self):
+        for template in self:
+            stock_quants = self.env['stock.quant'].search([
+                ('product_tmpl_id', '=', template.id),
+                ('quantity', '>', 0)
+            ])
+            template.reserved_qty = sum(quant.reserved_quantity for quant in stock_quants) or 0.0
+
+class Product(models.Model):
     _inherit = 'product.product'
 
     @api.model
@@ -16,3 +30,12 @@ class Product(models.Model):
         res = super(Product,self)._search(args, offset=0, limit=None, order=None, count=False, access_rights_uid=None)
 
         return res
+    
+    @api.multi
+    def _compute_reserved_qty(self):
+        for product in self:
+            stock_quants = self.env['stock.quant'].search([
+                ('product_id', '=', product.id),
+                ('quantity', '>', 0)
+            ])
+            product.reserved_qty = sum(quant.reserved_quantity for quant in stock_quants)

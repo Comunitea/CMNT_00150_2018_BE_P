@@ -32,6 +32,8 @@
             <xpath expr="//field[@name='order_line']/tree//field[@name='product_uom_qty']" position="before">
                 <field name="qty_available"/>
                 <field name="virtual_available"/>
+                <field name="reserved_qty"/>
+                <field name="pricelist_qty"/>
             </xpath>
         </field>
     </record>

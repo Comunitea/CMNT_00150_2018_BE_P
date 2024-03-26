@@ -16,3 +16,16 @@ class StockProductionLot(models.Model):
                 continue
             use_date_datetime = fields.Datetime.from_string(lot.use_date)
             lot.use_date_date = fields.Date.to_string(use_date_datetime.date())
+
+
+class StockMove(models.Model):
+    _inherit = 'stock.move'
+
+    show_check_availability = fields.Boolean(related='picking_id.show_check_availability')
+
+    def indivual_action_assign(self):
+        if not self.filtered(lambda move: move.state not in ('draft', 'cancel', 'done')):
+            raise UserError(_('Nothing to check the availability for.'))
+        for move in self.filtered(lambda move: move.state not in ('draft', 'cancel', 'done')):
+            move._action_assign()
+       

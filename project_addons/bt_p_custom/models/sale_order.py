@@ -27,3 +27,9 @@ class SaleOrderLine(models.Model):
                 lambda x: (x.product_id and x.product_id.id == line.product_id.id) or (x.product_tmpl_id and x.product_tmpl_id.id == line.product_id.product_tmpl_id.id)
             )
             line.pricelist_qty = min(product.mapped('min_quantity')) if product and product.mapped('min_quantity') else 0.0
+    
+    @api.onchange('product_id')
+    def product_id_change(self):
+        for line in self:
+            line._compute_pricelist_qty()
+        return super().product_id_change()

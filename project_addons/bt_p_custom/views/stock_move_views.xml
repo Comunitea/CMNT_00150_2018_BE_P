@@ -50,7 +50,9 @@
                 <field name="origin"/>
                 <field name="product_id"/>
                 <field name="product_uom_qty"/>
-                <field name="product_uom" options="{'no_open': True, 'no_create': True}" string="Unit of Measure" groups="product.group_uom"/>
+                <field name="qty_available"/>
+                <field name="reserved_qty"/>
+                <field name="product_uom" options="{'no_open': True, 'no_create': True}" string="Unit of Measure" groups="product.group_uom" invisible="1"/>
                 <field name="partner_id"/>
                 <field name="location_id" invisible="1"/>
                 <field name="picking_code" invisible="1"/>
@@ -127,6 +129,17 @@
             <xpath expr="//field[@name='move_lines']//button[@name='action_show_details']" position="after">
                 <field name="show_check_availability" invisible="1"/>
                 <button name="indivual_action_assign" attrs="{'invisible': [('show_check_availability', '=', False)]}" string="Check Availability" type="object" class="oe_highlight" groups="base.group_user"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_move_line_tree_partner" model="ir.ui.view">
+        <field name="name">view.move.line.tree.partner</field>
+        <field name="model">stock.move.line</field>
+        <field name="inherit_id" ref="stock.view_move_line_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='reference']" position="after">
+                <field name="partner_id"/>
             </xpath>
         </field>
     </record>

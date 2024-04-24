@@ -22,10 +22,22 @@ class StockMove(models.Model):
     _inherit = 'stock.move'
 
     show_check_availability = fields.Boolean(related='picking_id.show_check_availability')
+    qty_available = fields.Float('Qty available', related='product_id.qty_available')
+    reserved_qty = fields.Float('Reserved qty', related='product_id.reserved_qty')
 
     def indivual_action_assign(self):
         if not self.filtered(lambda move: move.state not in ('draft', 'cancel', 'done')):
             raise UserError(_('Nothing to check the availability for.'))
         for move in self.filtered(lambda move: move.state not in ('draft', 'cancel', 'done')):
             move._action_assign()
-       
+
+class StockMoveLine(models.Model):
+    _inherit = 'stock.move.line'
+
+    partner_id = fields.Many2one('res.partner', related='picking_id.partner_id')
+
+
+class StockQuant(models.Model):
+    _inherit = 'stock.quant'
+
+    use_date = fields.Datetime(string='Use date', related="lot_id.use_date")

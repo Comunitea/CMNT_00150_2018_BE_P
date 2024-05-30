@@ -30,5 +30,6 @@
         'views/stock.xml',
         'views/stock_move_views.xml',
         'views/report_purchaseorder.xml',
+        'data/data.xml',
     ],
 }

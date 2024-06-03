@@ -20,6 +20,7 @@
         'stock_picking_send_by_mail',
         'sale_crm',
         'product_expiry',
+        'website_sale',
     ],
     'data': [
         'views/product_view.xml',
@@ -31,5 +32,7 @@
         'views/stock_move_views.xml',
         'views/report_purchaseorder.xml',
         'data/data.xml',
+        'templates/website_sale_template.xml',
+        'templates/assets.xml',
     ],
 }

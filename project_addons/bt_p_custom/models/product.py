@@ -10,7 +10,7 @@ class Product(models.Model):
     pvp_stock_min_qty = fields.Float('PVP stock min. qty')
     pvp_lote_min_qty = fields.Float('PVP lote min. qty')
     shelf_life = fields.Integer('Shelf life (months)')
-    palet_size = fields.Float('Palet size')
+    palet_size = fields.Text('Palet size')
 
     @api.multi
     def _compute_reserved_qty(self):
@@ -36,7 +36,7 @@ class Product(models.Model):
         res = super(Product,self)._search(args, offset=0, limit=None, order=None, count=False, access_rights_uid=None)
 
         return res
-    
+
     @api.multi
     def _compute_reserved_qty(self):
         for product in self:

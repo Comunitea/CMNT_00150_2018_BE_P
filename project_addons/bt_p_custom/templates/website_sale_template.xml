@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="product" inherit_id="website_sale.product">
+        <xpath expr="//a[@id='add_to_cart']" position="after">
+            <div class="mt8 row">
+                <div class="col-md-6">
+                    <p t-if="product.pvp_stock"><b>PVP stock:</b> <spam t-field="product.pvp_stock"/></p>
+                    <p t-if="product.pvp_lote"><b>PVP Lote:</b> <spam t-field="product.pvp_lote"/></p>
+                    <p t-if="product.pvp_stock_min_qty"><b>PVP stock min. qty:</b> <spam t-field="product.pvp_stock_min_qty"/></p>
+                    <p t-if="product.pvp_stock_min_qty"><b>PVP lote min. qty:</b> <spam t-field="product.pvp_stock_min_qty"/></p>
+                </div>
+                <div class="col-md-6">
+                    <p t-if="product.shelf_life"><b>Shelf life:</b> <spam t-field="product.shelf_life"/></p>
+                    <p t-if="product.palet_size"><b>Palet Size:</b> <spam t-field="product.palet_size"/></p>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

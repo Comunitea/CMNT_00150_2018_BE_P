@@ -253,3 +253,38 @@ msgstr "\n"
 #: model:mail.template,subject:bt_p_custom.email_template_pending_quantities
 msgid "${object.company_id.name} Delivery Order (Ref ${object.name or 'n/a' })"
 msgstr "${object.company_id.name} Orden de Envío (Ref ${object.name or 'n/a' })"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.product
+msgid "<b>Internal reference:</b>"
+msgstr "<b>Referencia:</b>"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.product
+msgid "<b>Pallet Size:</b>"
+msgstr "<b>Tamaño palet:</b>"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.product
+msgid "<b>Shelf life (months):</b>"
+msgstr "<b>Duración (meses):</b>"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.product
+msgid "<b>Unit price (buying by boxes):</b>"
+msgstr "<b>Precio unitario (comprando cajas):</b>"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.product
+msgid "<b>Unit price (buying by pallets):</b>"
+msgstr "<b>Precio unitario (comprando palets):</b>"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.product
+msgid "<b>Units per box:</b>"
+msgstr "<b>Unidades por caja:</b>"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.product
+msgid "<b>Units per pallet:</b>"
+msgstr "<b>Unidades por palet:</b>"

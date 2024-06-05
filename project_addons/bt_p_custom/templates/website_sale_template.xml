@@ -3,15 +3,24 @@
     <template id="product" inherit_id="website_sale.product">
         <xpath expr="//a[@id='add_to_cart']" position="after">
             <div class="mt8 row">
-                <div class="col-md-6">
-                    <p t-if="product.pvp_stock"><b>PVP stock:</b> <spam t-field="product.pvp_stock"/></p>
-                    <p t-if="product.pvp_lote"><b>PVP Lote:</b> <spam t-field="product.pvp_lote"/></p>
-                    <p t-if="product.pvp_stock_min_qty"><b>PVP stock min. qty:</b> <spam t-field="product.pvp_stock_min_qty"/></p>
-                    <p t-if="product.pvp_stock_min_qty"><b>PVP lote min. qty:</b> <spam t-field="product.pvp_stock_min_qty"/></p>
+                <div class="row">
+                    <ul>
+                        <li t-if="product.pvp_stock"><b>Unit price (buying by boxes):</b> <spam t-field="product.pvp_stock"/></li>
+                        <li t-if="product.pvp_stock_min_qty"><b>Units per box:</b> <spam t-field="product.pvp_stock_min_qty"/></li>
+                    </ul>
                 </div>
-                <div class="col-md-6">
-                    <p t-if="product.shelf_life"><b>Shelf life:</b> <spam t-field="product.shelf_life"/></p>
-                    <p t-if="product.palet_size"><b>Palet Size:</b> <spam t-field="product.palet_size"/></p>
+                <div class="row">
+                    <ul>
+                        <li t-if="product.pvp_lote"><b>Unit price (buying by pallets):</b> <spam t-field="product.pvp_lote"/></li>
+                        <li t-if="product.pvp_stock_min_qty"><b>Units per pallet:</b> <spam t-field="product.pvp_stock_min_qty"/></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <ul>
+                        <li t-if="product.shelf_life"><b>Shelf life (months):</b> <spam t-field="product.shelf_life"/></li>
+                        <li t-if="product.palet_size"><b>Pallet Size:</b> <spam t-field="product.palet_size"/></li>
+                        <li t-if="product.default_code"><b>Internal reference:</b> <spam t-field="product.default_code"/></li>
+                    </ul>
                 </div>
             </div>
         </xpath>

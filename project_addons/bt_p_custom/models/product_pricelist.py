@@ -5,8 +5,10 @@ from odoo import _, api, fields, models
 
 class ProductPricelistItem(models.Model):
     _inherit = "product.pricelist.item"
+
     name = fields.Char(store=True)
     price = fields.Char(store=True)
+    commercial_agreement = fields.Integer('Commercial agreement')
 
     @api.one
     @api.depends(

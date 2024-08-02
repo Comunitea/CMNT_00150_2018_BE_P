@@ -5,8 +5,8 @@ class Product(models.Model):
     _inherit = 'product.template'
 
     reserved_qty = fields.Float('Reserved qty', compute='_compute_reserved_qty')
-    pvp_stock = fields.Float('PVP stock')
-    pvp_lote = fields.Float('PVP lote')
+    pvp_stock = fields.Float('PVP stock', digits=(16, 2))
+    pvp_lote = fields.Float('PVP lote', digits=(16, 2))
     pvp_stock_min_qty = fields.Float('PVP stock min. qty')
     pvp_lote_min_qty = fields.Float('PVP lote min. qty')
     shelf_life = fields.Integer('Shelf life (months)')

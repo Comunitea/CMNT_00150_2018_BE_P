@@ -5,14 +5,14 @@
             <div class="mt8 row">
                 <div class="row">
                     <ul>
-                        <li t-if="product.pvp_stock"><b>Unit price (buying by boxes):</b> <spam t-field="product.pvp_stock"/></li>
-                        <li t-if="product.pvp_stock_min_qty"><b>Units per box:</b> <spam t-field="product.pvp_stock_min_qty"/></li>
+                        <li t-if="product.pvp_stock"><b>Unit price (buying by boxes):</b> <spam t-esc="product.pvp_stock"/> €</li>
+                        <li t-if="product.pvp_stock_min_qty"><b>Units per box:</b> <spam t-esc="int(product.pvp_stock_min_qty)"/></li>
                     </ul>
                 </div>
                 <div class="row">
                     <ul>
-                        <li t-if="product.pvp_lote"><b>Unit price (buying by pallets):</b> <spam t-field="product.pvp_lote"/></li>
-                        <li t-if="product.pvp_lote_min_qty"><b>Units per pallet:</b> <spam t-field="product.pvp_lote_min_qty"/></li>
+                        <li t-if="product.pvp_lote"><b>Unit price (buying by pallets):</b> <spam t-esc="product.pvp_lote"/> €</li>
+                        <li t-if="product.pvp_lote_min_qty"><b>Units per pallet:</b> <spam t-esc="int(product.pvp_lote_min_qty)"/></li>
                     </ul>
                 </div>
                 <div class="row">

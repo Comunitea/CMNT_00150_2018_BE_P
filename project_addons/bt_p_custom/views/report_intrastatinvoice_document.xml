@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_intrastatinvoice_document" inherit_id="report_intrastat.report_intrastatinvoice_document">
+        <xpath expr="//address/.." position="attributes">
+            <attribute name="groups">!sale.group_delivery_invoice_address</attribute>
+        </xpath>
+        <xpath expr="//address/.." position="before">
+            <div class="col-xs-6" groups="sale.group_delivery_invoice_address">
+                <div t-if="o.partner_shipping_id and (o.partner_shipping_id != o.partner_id)">
+                    <strong>Shipping address:</strong>
+                    <div t-field="o.partner_shipping_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;], &quot;no_marker&quot;: True}"/>
+                </div>
+            </div>
+
+            <div class="col-xs-5 col-xs-offset-1" groups="sale.group_delivery_invoice_address">
+                <div t-field="o.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;], &quot;no_marker&quot;: True}"/>
+                <div t-if="o.partner_id.vat" class="mt16"><t t-esc="o.company_id.country_id.vat_label or 'TIN'"/>: <span t-field="o.partner_id.vat"/></div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

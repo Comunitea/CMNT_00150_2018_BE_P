@@ -21,6 +21,7 @@
         'sale_crm',
         'product_expiry',
         'website_sale',
+        'report_intrastat',
     ],
     'data': [
         'views/product_view.xml',
@@ -34,5 +35,6 @@
         'data/data.xml',
         'templates/website_sale_template.xml',
         'templates/assets.xml',
+        'views/report_intrastatinvoice_document.xml',
     ],
 }

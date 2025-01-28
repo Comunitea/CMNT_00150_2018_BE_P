@@ -288,3 +288,82 @@ msgstr "<b>Unidades por caja:</b>"
 #: model:ir.ui.view,arch_db:bt_p_custom.product
 msgid "<b>Units per pallet:</b>"
 msgstr "<b>Unidades por palet:</b>"
+
+#. module: bt_p_custom
+#: code:addons/bt_p_custom/models/stock.py:63
+#, python-format
+msgid "Lot {} close to expire date: {} \n"
+""
+msgstr "Lote {} próximo a caducidad: {} \n"
+""
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.report_delivery_reservation_document
+msgid "Lot/Serial Number"
+msgstr "Lote/Número de serie"
+
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.report_delivery_reservation_document
+msgid "This shipment is a backorder of"
+msgstr "Este envío es un pedido parcial de"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.report_delivery_reservation_document
+msgid "<span class=\"pull-right\">Expiry Date</span>"
+msgstr "<span class=\"pull-right\">Fecha de expiración</span>"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.report_delivery_reservation_document
+msgid "<span><strong>Customer Address:</strong></span>"
+msgstr "<span><strong>Dirección del Cliente:</strong></span>"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.report_delivery_reservation_document
+msgid "<strong>Carrier</strong>"
+msgstr "<strong>Transporte</strong>"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.report_delivery_reservation_document
+msgid "<strong>Date</strong>"
+msgstr "<strong>Fecha</strong>"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.report_delivery_reservation_document
+msgid "<strong>Order (Origin)</strong>"
+msgstr "<strong>Orden (Origen)</strong>"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.report_delivery_reservation_document
+msgid "<strong>Product</strong>"
+msgstr "<strong>Producto</strong>"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.report_delivery_reservation_document
+msgid "<strong>Quantity</strong>"
+msgstr "<strong>Cantidad</strong>"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.report_delivery_reservation_document
+msgid "<strong>Secondary Qty</strong>"
+msgstr "<strong>C. Secundaria</strong>"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.report_delivery_reservation_document
+msgid "<strong>Tracking Number</strong>"
+msgstr "<strong>Identificador:</strong>"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.report_delivery_reservation_document
+msgid "<strong>Weight</strong>"
+msgstr "<strong>Peso</strong>"
+
+#. module: bt_p_custom
+#: model:ir.ui.view,arch_db:bt_p_custom.report_delivery_reservation_document
+msgid "All items couldn't be shipped, the remaining ones will be shipped as soon as they become available."
+msgstr "Todos los artículos no pudieron ser enviados, los restantes serán enviados tan pronto como estén disponibles."
+
+#. module: bt_p_custom
+#: model:ir.actions.report,name:bt_p_custom.action_report_reservation_delivery
+msgid "Delivery Slip (reservations)"
+msgstr "Vale de entrega (reservas)"

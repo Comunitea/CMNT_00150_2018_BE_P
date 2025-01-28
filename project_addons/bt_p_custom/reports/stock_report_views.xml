@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <report
+            string="Delivery Slip (reservations)"
+            id="action_report_reservation_delivery"
+            model="stock.picking"
+            report_type="qweb-pdf"
+            name="bt_p_custom.report_reservation_deliveryslip"
+            file="bt_p_custom.report_reservation_deliveryslip"
+            print_report_name="'Delivery Slip (reservations) - %s - %s' % (object.partner_id.name or '', object.name)"
+        />
+    </data>
+</odoo>

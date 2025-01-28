@@ -36,5 +36,7 @@
         'templates/website_sale_template.xml',
         'templates/assets.xml',
         'views/report_intrastatinvoice_document.xml',
+        'reports/stock_report_views.xml',
+        'reports/report_deliveryslip.xml',
     ],
 }

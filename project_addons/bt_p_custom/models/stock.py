@@ -1,6 +1,7 @@
 # © 2019 Comunitea
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
-from odoo import api, fields, models
+from dateutil import relativedelta
+from odoo import api, fields, models, _
 
 
 class StockProductionLot(models.Model):
@@ -41,3 +42,25 @@ class StockQuant(models.Model):
     _inherit = 'stock.quant'
 
     use_date = fields.Datetime(string='Use date', related="lot_id.use_date")
+
+class StockPicking(models.Model):
+    _inherit = 'stock.picking'
+
+    lot_alert = fields.Char(compute='_compute_lot_alert')
+
+    @api.depends('move_line_ids.lot_id', 'scheduled_date')
+    def _compute_lot_alert(self):
+        for picking in self:
+            alert_message = ""
+            show_alert = False
+            if picking.scheduled_date >= fields.Datetime.now():
+                lot_ids = picking.move_line_ids.mapped('lot_id')
+                for lot in lot_ids.filtered(lambda x: x.use_date):
+                    lot_date = fields.datetime.strptime(lot.use_date, '%Y-%m-%d %H:%M:%S')
+                    now = fields.datetime.strptime(fields.Datetime.now(), '%Y-%m-%d %H:%M:%S')
+                    time_diff = relativedelta.relativedelta(lot_date,now)
+                    if lot.use_date and time_diff.months < 6:
+                        alert_message += _("Lot {} close to expire date: {} \n".format(lot.name, lot.use_date))
+                        show_alert = True
+            if show_alert:
+                picking.lot_alert = alert_message

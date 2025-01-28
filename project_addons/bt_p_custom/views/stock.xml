@@ -23,6 +23,17 @@
         </field>
     </record>
 
+    <record id="view_picking_form_alert" model="ir.ui.view">
+        <field name="name">view.picking.form.alert</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+            <h1 position="after">
+                <field name="lot_alert"/>
+            </h1>
+        </field>
+    </record>
+
     <record id="view_stock_quant_tree" model="ir.ui.view">
         <field name="name">stock.quant.tree.inherit</field>
         <field name="model">stock.quant</field>
@@ -46,7 +57,7 @@
         </field>
     </record>
 
-    <!-- 
+    <!--
         Añadida en la plantilla stock_picking_send_by_mail.email_template_stock_picking
         / ${object.group_id.name} en la línea de Número de pedido.
     -->

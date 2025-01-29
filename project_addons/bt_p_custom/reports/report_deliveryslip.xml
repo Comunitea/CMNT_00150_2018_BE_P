@@ -59,6 +59,7 @@
                             </tr>
                         </tbody>
                     </table>
+
                     <table class="table table-condensed mt48" t-if="o.move_line_ids">
                         <t t-set="has_serial_number" t-value="o.move_line_ids.mapped('lot_id')" groups="stock.group_production_lot"/>
                         <thead>
@@ -108,12 +109,38 @@
                                     <span class="pull-right" t-field="move_line.lot_id.use_date" t-field-options="{&quot;widget&quot;: &quot;date&quot;}"/>
                                 </td>
                                 <td class="text-center">
-                                    <span t-field="move_line.qty_done"/>
+                                    <span t-field="move_line.product_qty"/>
                                     <span t-field="move_line.product_uom_id"/>
                                 </td>
                                 <td>
                                     <span t-field="move_line.secondary_uom_qty"/>
                                     <span t-field="move_line.secondary_uom_id"/>
+                                </td>
+                            </tr>
+                            <t t-set="lines" t-value="o.move_lines.filtered(lambda x: x.product_uom_qty and not x.move_line_ids)"/>
+                            <tr t-foreach="lines" t-as="move">
+                                <td>
+                                    <span t-field="move.product_id"/>
+                                    <p t-if="o.picking_type_code == 'outgoing'">
+                                        <span t-field="move.product_id.sudo().description_pickingout"/>
+                                    </p>
+                                    <p t-if="o.picking_type_code == 'incoming'">
+                                        <span t-field="move.product_id.sudo().description_pickingin"/>
+                                    </p>
+                                </td>
+                                <td>
+                                    <span>Not reserved</span>
+                                </td>
+                                <td>
+                                    <span>Not reserved</span>
+                                </td>
+                                <td class="text-center">
+                                    <span t-field="move.product_uom_qty"/>
+                                    <span t-field="move.product_uom"/>
+                                </td>
+                                <td>
+                                    <span t-field="move.secondary_uom_qty"/>
+                                    <span t-field="move.secondary_uom_id"/>
                                 </td>
                             </tr>
                         </tbody>

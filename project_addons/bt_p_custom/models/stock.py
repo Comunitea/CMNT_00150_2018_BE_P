@@ -53,7 +53,7 @@ class StockPicking(models.Model):
         for picking in self:
             alert_message = ""
             show_alert = False
-            if picking.scheduled_date >= fields.Datetime.now():
+            if picking.state == 'assigned':
                 lot_ids = picking.move_line_ids.mapped('lot_id')
                 for lot in lot_ids.filtered(lambda x: x.use_date):
                     lot_date = fields.datetime.strptime(lot.use_date, '%Y-%m-%d %H:%M:%S')

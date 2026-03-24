@@ -1,6 +1,7 @@
 # © 2019 Comunitea
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 from dateutil import relativedelta
+from odoo.exceptions import UserError
 from odoo import api, fields, models, _
 
 
@@ -64,3 +65,8 @@ class StockPicking(models.Model):
                         show_alert = True
             if show_alert:
                 picking.lot_alert = alert_message
+
+class StockInventoryLine(models.Model):
+    _inherit = 'stock.inventory.line'
+
+    use_date = fields.Datetime(string='Use date', related="prod_lot_id.use_date", store=True)
